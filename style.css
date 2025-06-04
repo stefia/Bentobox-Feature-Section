@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #000;
+}
+
+.text--h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.text--h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.text--body {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #52525A;
+    background-color: #fff;
+}
+
+.bento {
+    margin: 40px;
+}
+
+.bento__logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.bento__title {
+    max-width: 510px;
+    margin: 16px auto;
+    text-align: center;
+}
+
+.bento__description {
+    max-width: 570px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.bento__functions {
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 24px;
+    background-color: #F3F4F6;
+}
+
+.bento__item {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 calc(33.333% - 16px);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.bento__item-img {
+    display: block;
+    width: 304px;         
+    height: auto;
+}
+
+.bento__item-text {
+    margin: 12px 0 24px 0;
+}
+
+.bento__item:nth-child(4),
+.bento__item:nth-child(5) {
+    flex-direction: row;
+    flex: 0 1 calc(50% - 12px);
+    gap: 12px;
+}
+
+@media (max-width: 1024px) {
+    .bento__item {
+        flex: 0 1 calc(50% - 12px);
+    }
+    .bento__item:nth-child(3),
+    .bento__item:nth-child(4),
+    .bento__item:nth-child(5) {
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    .bento__item:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .bento__functions { 
+        flex-direction: column;
+    }
+    .bento__item {
+        width: 100%;
+        padding: 24px;
+    }
+    .bento__item:nth-child(3),
+    .bento__item:nth-child(4),
+    .bento__item:nth-child(5) {
+        flex-direction: column;
+    }
+    .bento__item-img {
+        width: auto;             
+        max-width: 100%;         
+        height: auto;    
+    }
+}
