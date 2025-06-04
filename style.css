@@ -76,7 +76,7 @@ body {
 }
 
 .bento__item-text {
-    margin: 12px 0 24px 0;
+    margin: 12px 0;
 }
 
 .bento__item:nth-child(4),
