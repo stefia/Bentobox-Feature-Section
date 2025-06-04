@@ -23,12 +23,13 @@ body {
 .text--body {
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.5;
     color: #52525A;
     background-color: #fff;
 }
 
 .bento {
-    margin: 40px;
+    margin: 40px 40px 80px;
 }
 
 .bento__logo {
@@ -106,7 +107,7 @@ body {
 
 @media (max-width: 640px) {
     .bento {
-        margin: 10px;
+        margin: 30px 10px 50px;
     }
     .bento__functions { 
         flex-direction: column;
