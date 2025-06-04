@@ -90,10 +90,12 @@ body {
     .bento__item {
         flex: 0 1 calc(50% - 12px);
     }
+    .bento__item:nth-child(3) {
+        flex-direction: row;
+    }
     .bento__item:nth-child(3),
     .bento__item:nth-child(4),
     .bento__item:nth-child(5) {
-        flex-direction: row;
         flex-basis: 100%;
     }
     .bento__item:nth-child(4) {
@@ -103,6 +105,9 @@ body {
 
 
 @media (max-width: 640px) {
+    .bento {
+        margin: 10px;
+    }
     .bento__functions { 
         flex-direction: column;
     }
@@ -110,10 +115,8 @@ body {
         width: 100%;
         padding: 24px;
     }
-    .bento__item:nth-child(3),
-    .bento__item:nth-child(4),
-    .bento__item:nth-child(5) {
-        flex-direction: column;
+    .bento__item:not(:nth-child(2)) {
+        flex-direction: column-reverse;
     }
     .bento__item-img {
         width: auto;             
